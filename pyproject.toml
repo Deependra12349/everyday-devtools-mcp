@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "everyday-devtools-mcp"
+version = "0.1.0"
+description = "Zero-dependency MCP server with 17 everyday developer utilities: Base64, JSON, JWT, UUID, hashing, cron, regex, passwords and more."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Deependra" }]
+keywords = ["mcp", "model-context-protocol", "developer-tools", "claude", "utilities"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.scripts]
+everyday-devtools-mcp = "everyday_devtools_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/Deependra12349/everyday-devtools-mcp"
+
+[tool.setuptools]
+packages = ["everyday_devtools_mcp"]
